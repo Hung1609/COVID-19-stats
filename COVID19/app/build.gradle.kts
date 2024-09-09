@@ -36,6 +36,12 @@ android {
 
 dependencies {
 
+    implementation(libs.retrofit)
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation(libs.ccp)
+    implementation("com.github.blackfizz:eazegraph:1.2.2@aar")
+    implementation(libs.library)
+
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.constraintlayout)
