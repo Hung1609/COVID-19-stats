@@ -36,11 +36,11 @@ android {
 
 dependencies {
 
-    implementation(libs.retrofit)
+    implementation("com.squareup.retrofit2.retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation(libs.ccp)
+    implementation("com.hbb20:ccp:2.7.0")
     implementation("com.github.blackfizz:eazegraph:1.2.2@aar")
-    implementation(libs.library)
+    implementation("com.nineoldandroids:library:2.4.0")
 
     implementation(libs.appcompat)
     implementation(libs.material)
