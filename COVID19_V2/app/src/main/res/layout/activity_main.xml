@@ -25,20 +25,20 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp"
                     android:layout_weight="1"
-                    android:layout_textSize="25sp"
-                    android:layout_textStyle="bold"
-                    android:textColor="@color/white"
-                    android:text="@string/covid_19">
+                    android:text="@string/covid_19"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white">
                 </TextView>
 
                 <com.hbb20.CountryCodePicker
                     android:layout_width="100dp"
                     android:layout_height="40dp"
-                    app:cpp_autoDetectCountry="true"
+                    app:ccp_autoDetectCountry="true"
                     android:layout_marginLeft="20dp"
                     app:ccp_showPhoneCode="false"
                     app:ccp_showFullName="false"
@@ -69,13 +69,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
@@ -93,14 +93,14 @@
                             android:textColor="@color/white"
                             android:textStyle="bold"
                             android:textSize="15sp"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
@@ -118,14 +118,14 @@
                             android:textColor="@color/white"
                             android:textStyle="bold"
                             android:textSize="15sp"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
@@ -143,14 +143,14 @@
                             android:textColor="@color/white"
                             android:textStyle="bold"
                             android:textSize="15sp"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="20dp"
+                        android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp"
                         android:orientation="horizontal">
 
@@ -168,7 +168,7 @@
                             android:textColor="@color/white"
                             android:textStyle="bold"
                             android:textSize="15sp"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center" />
                     </LinearLayout>
 
@@ -228,7 +228,7 @@
                             android:text="@string/total"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center">
                         </TextView>
 
@@ -238,7 +238,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
 
@@ -257,8 +257,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:layout_marginLeft="5dp"
+                            android:textSize="11sp"
+                            android:layout_marginStart="5dp"
                             android:text="@string/increment_number"
                             android:id="@+id/todaytotal"
                             android:textColor="@color/yellow"
@@ -304,7 +304,7 @@
                             android:text="@string/active"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center">
                         </TextView>
 
@@ -314,7 +314,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
 
@@ -333,8 +333,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:layout_marginLeft="5dp"
+                            android:textSize="11sp"
+                            android:layout_marginStart="5dp"
                             android:text="@string/increment_number"
                             android:id="@+id/todayactive"
                             android:textColor="@color/green"
@@ -380,7 +380,7 @@
                             android:text="@string/recovered"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center">
                         </TextView>
 
@@ -390,7 +390,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
 
@@ -409,8 +409,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:layout_marginLeft="5dp"
+                            android:textSize="11sp"
+                            android:layout_marginStart="5dp"
                             android:text="@string/increment_number"
                             android:id="@+id/todayrecorvered"
                             android:textColor="@color/blue"
@@ -455,7 +455,7 @@
                             android:text="@string/deaths"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            android:layout_marginLeft="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_gravity="center">
                         </TextView>
 
@@ -465,7 +465,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="5dp"
+                        android:layout_marginStart="5dp"
                         android:padding="5dp"
                         android:orientation="horizontal">
 
@@ -484,8 +484,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:textStyle="bold"
-                            android:textSize="10sp"
-                            android:layout_marginLeft="5dp"
+                            android:textSize="11sp"
+                            android:layout_marginStart="5dp"
                             android:text="@string/increment_number"
                             android:id="@+id/todaydeath"
                             android:textColor="@color/red"
@@ -521,10 +521,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
                 android:layout_weight="1"
+                android:paddingStart="40dp"
+                android:paddingEnd="40dp"
                 android:padding="5dp"
                 android:textColor="@color/white"
                 android:text="@string/country"
-                android:layout_marginLeft="15sp"
                 android:textSize="15sp"
                 android:textStyle="bold">
             </TextView>
@@ -533,6 +534,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingStart="40dp"
+                android:paddingEnd="40dp"
                 android:textAlignment="center"
                 android:layout_weight="1"
                 android:padding="5dp"
@@ -541,15 +543,14 @@
                 android:id="@+id/filter"
                 android:textSize="15sp"
                 android:textStyle="bold"
-                android:gravity="center_horizontal"
-                android:paddingLeft="40dp">
+                android:gravity="center_horizontal">
             </TextView>
 
             <Spinner
                 android:layout_width="32dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
-                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
                 android:id="@+id/spinner"
                 android:background="@drawable/ccp_ic_arrow_drop_down">
             </Spinner>
