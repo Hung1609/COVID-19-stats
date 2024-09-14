@@ -23,6 +23,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
                 return new StatsFragment();
             case 1:
                 return new SignSymptomFragment();
+            case 2:
+                return new YOUR_NAME; // replace with your file name
             default:
                 return new StatsFragment();
         }
@@ -30,7 +32,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2; // Number of pages for a ViewPager
+        return 3; // Number of pages for a ViewPager
     }
 
     @Override
@@ -39,6 +41,8 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "STATISTICS";
             case 1:
+                return "COUNTRY";
+            case 2:
                 return "SIGNS & SYMPTOMS";
             default:
                 return null;
