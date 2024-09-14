@@ -24,7 +24,7 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return new SignSymptomFragment();
             case 2:
-                return new YOUR_NAME; // replace with your file name
+                return new StatsFragment(); // replace with your file name
             default:
                 return new StatsFragment();
         }

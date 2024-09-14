@@ -15,6 +15,19 @@
         android:theme="@style/Theme.Something"
         tools:targetApi="31">
         <activity
+            android:name=".StartScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/view_drawable" />
+
+        <activity
             android:name=".ViewPagerAdapter"
             android:exported="false" />
         <activity
