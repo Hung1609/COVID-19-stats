@@ -13,6 +13,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+
 public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
     private Context context;
     private List<CountryModel> countryModelList;
@@ -33,7 +35,9 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
         ImageView imageView = view.findViewById(R.id.imageFlag);
 
         tvCountryName.setText(countryModelList.get(position).getCountry());
-        return super.getView(position, convertView, parent);
+        Glide.with(context).load(countryModelList.get(position).getFlag()).into(imageView);
+        return view;
+
     }
 
 }
