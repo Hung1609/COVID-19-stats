@@ -22,9 +22,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new StatsFragment();
             case 1:
-                return new SignSymptomFragment();
+                return new AffectedCountry();
             case 2:
-                return new StatsFragment(); // replace with your file name
+                return new SignSymptomFragment(); // replace with your file name
             default:
                 return new StatsFragment();
         }
@@ -39,9 +39,9 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return "STATISTICS";
+                return "GLOBAL";
             case 1:
-                return "COUNTRY";
+                return "COUNTRIES";
             case 2:
                 return "SIGNS & SYMPTOMS";
             default:
