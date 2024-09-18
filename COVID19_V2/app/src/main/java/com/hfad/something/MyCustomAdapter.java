@@ -19,13 +19,11 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
     private Context context;
     private List<CountryModel> countryModelList;
 
-
     public MyCustomAdapter(Context context, List<CountryModel> countryModelList) {
-        super(context, R.layout.list_custom_item,countryModelList);
+        super(context, R.layout.list_custom_item, countryModelList);
 
         this.context= context;
         this.countryModelList = countryModelList;
-
     }
     @NonNull
     @Override
@@ -35,9 +33,8 @@ public class MyCustomAdapter extends ArrayAdapter<CountryModel> {
         ImageView imageView = view.findViewById(R.id.imageFlag);
 
         tvCountryName.setText(countryModelList.get(position).getCountry());
-        Glide.with(context).load(countryModelList.get(position).getFlag()).into(imageView);
+        Glide.with(context).load(countryModelList.get(position).getFlag()).circleCrop().into(imageView);
+
         return view;
-
     }
-
 }

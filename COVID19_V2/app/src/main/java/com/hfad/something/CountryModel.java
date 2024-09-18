@@ -1,13 +1,13 @@
 package com.hfad.something;
 
 public class CountryModel {
-    private String flag,country,cases,todayCases,deaths,todayDeaths,recovered,active,critical;
+    private String country,cases,todayCases,deaths,todayDeaths,recovered,active,critical;
+    private int flag;
     public CountryModel(){
 
     }
 
-    public CountryModel(String active, String flag, String country, String cases, String todayCases, String deaths, String todayDeaths, String recovered, String critical) {
-        this.active = active;
+    public CountryModel(int flag, String country, String cases, String todayCases, String deaths, String todayDeaths, String recovered, String active, String critical) {
         this.flag = flag;
         this.country = country;
         this.cases = cases;
@@ -15,14 +15,15 @@ public class CountryModel {
         this.deaths = deaths;
         this.todayDeaths = todayDeaths;
         this.recovered = recovered;
+        this.active = active;
         this.critical = critical;
     }
 
-    public String getFlag() {
+    public int getFlag() {
         return flag;
     }
 
-    public void setFlag(String flag) {
+    public void setFlag(int flag) {
         this.flag = flag;
     }
 
